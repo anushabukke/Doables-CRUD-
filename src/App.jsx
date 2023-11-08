@@ -9,7 +9,6 @@ const App = () => {
     if (localValue == null) return [];
     return JSON.parse(localValue);
   });
-
   useEffect(() => {
     localStorage.setItem("ITEMS", JSON.stringify(todos));
   }, [todos]);
